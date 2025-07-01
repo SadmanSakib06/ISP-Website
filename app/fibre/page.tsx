@@ -95,35 +95,11 @@ export default function FibrePage() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="bg-white text-gray-900 border-gray-300 hover:bg-gray-50">
-                    Customer Portal <ChevronDown className="w-4 h-4 ml-1" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <Link href="/portal" className="w-full">
-                      User Account Management
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/portal/billing" className="w-full">
-                      Billing and Payments
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/portal/support" className="w-full">
-                      Support Ticket System
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/portal/services" className="w-full">
-                      Service Upgrade/Downgrade
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <Link href="/portal">
+                <Button variant="outline" className="bg-white text-gray-900 border-gray-300 hover:bg-gray-50">
+                  Customer Portal
+                </Button>
+              </Link>
               <Button className="bg-orange-500 hover:bg-orange-600 text-white">Get Connected</Button>
             </div>
           </div>
